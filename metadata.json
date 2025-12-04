@@ -1,0 +1,5 @@
+{
+  "name": "Discord-Style AI Chat",
+  "description": "A modern, dark-themed chat interface inspired by Discord's DM UI, featuring a responsive layout and Gemini-powered AI responses.",
+  "requestFramePermissions": []
+}
