@@ -7,7 +7,7 @@
   <br />
   <br />
 
-  # 🤖 Discord-Style AI Chat
+  # 🤖 Discord-Style Gemini AI Chatbot Page
   
   **A pixel-perfect recreation of the modern Discord UI, powered by Google's Gemini AI.**
 
