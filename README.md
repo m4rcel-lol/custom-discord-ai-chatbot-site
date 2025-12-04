@@ -121,10 +121,10 @@ Contributions are what make the open source community such an amazing place to l
 
 ## 📝 License
 
-Distributed under the MIT License, however it may be a risk to use it since it mimics the real look of Discord. See `LICENSE` for more information.
+Distributed under the MIT License, however it may be a risk to use it, since it mimics the real look of Discord and may get you in trouble. See `LICENSE` for more information.
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ using React & Gemini</p>
+  <p>Made with ❤️ and patience by m5rcel using React & Gemini</p>
 </div>
