@@ -7,9 +7,9 @@
   <br />
   <br />
 
-  # 🤖 Discord-Style Gemini AI Chatbot Page
+  # 🤖 Discord-Style Gemini AI Temporary Chatbot Page
   
-  **A pixel-perfect recreation of the modern Discord UI, powered by Google's Gemini AI.**
+  **A pixel-perfect recreation of the modern Discord UI, powered by Google's Gemini AI. Messages do not get saved after refreshing the page.**
 
   <p>
     <a href="#-key-features">Key Features</a> •
