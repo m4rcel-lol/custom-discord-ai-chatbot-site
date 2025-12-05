@@ -4,9 +4,12 @@ import { Message } from '../types';
 let chatSession: any = null;
 
 const getClient = () => {
+  // Ensure process.env.API_KEY is available. 
+  // If running in a browser without a bundler that polyfills process, this might fail unless configured.
   const apiKey = process.env.API_KEY;
+  
   if (!apiKey) {
-    console.error("API Key not found");
+    console.error("Gemini API Key is missing. Ensure process.env.API_KEY is set.");
     return null;
   }
   return new GoogleGenAI({ apiKey });
@@ -17,13 +20,9 @@ export const sendMessageToGemini = async (
   previousMessages: Message[]
 ): Promise<string> => {
   const ai = getClient();
-  if (!ai) return "Error: API Key is missing. Please check your configuration.";
+  if (!ai) return "Error: API Key is missing. Check the console for details.";
 
   try {
-    // We maintain a simple local chat session if possible, or create new one
-    // Ideally, we'd persist the `chatSession` object, but for this stateless example 
-    // we can re-hydrate somewhat or just use the persistent variable module-level.
-    
     if (!chatSession) {
        chatSession = ai.chats.create({
         model: 'gemini-2.5-flash',
@@ -37,6 +36,6 @@ export const sendMessageToGemini = async (
     return response.text;
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "I'm having trouble connecting to the mainframe right now. Try again later!";
+    return "I'm having trouble connecting to the servers right now. Please check your network or API key configuration.";
   }
 };
